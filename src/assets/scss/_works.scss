@@ -1,0 +1,73 @@
+.works {
+  padding-top: 80px;
+  padding-bottom: 116px;
+
+  &__heading {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 80px;
+    @include lineCenter(0);
+  }
+  &__button-box {
+    @include lineCenter(60px);
+    margin-bottom: 60px;
+  }
+  &__button {
+    padding: 0;
+    border: none;
+    font-family: $fontFamilyCormorantGaramond;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 1s ease-out;
+  }
+  &__button:hover {
+    color: $colorHoverText;
+  }
+  &__button-active {
+    border-bottom: 1px solid $colorHoverText;
+    color: $colorHoverText;
+  }
+  &__ul {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 24px;
+  }
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 767px) {
+  .works {
+    &__button-box {
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+    &__heading {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+    &__button {
+      font-size: 20px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .works {
+    &__heading {
+      font-size: 25px;
+      margin-bottom: 30px;
+    }
+    &__button {
+      font-size: 15px;
+    }
+  }
+}

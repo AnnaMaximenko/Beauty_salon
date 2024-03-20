@@ -1,0 +1,73 @@
+.error {
+  padding-top: 117px;
+  padding-bottom: 117px;
+  @include lineSpaceBetween(0);
+  &__right {
+    @include ColumnCenter(25px);
+  }
+  &__img {
+    border-radius: 0px 100px 0px 0px;
+  }
+  &__heading {
+    text-align: center;
+    font-size: 101px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  &__text {
+    color: #fff;
+    text-align: center;
+    // FIXME Скачать шрифт Anek
+    font-family: "Anek Devanagari";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 44.8px */
+  }
+  &__button {
+    border-radius: 18px;
+    background-color: $colorHoverText;
+    // FIXME добавить переменную цвета свечения
+    box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+    padding: 26px 34px;
+    @include lineCenter(9px);
+  }
+  &__text-button {
+    text-align: center;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 28.75px */
+    letter-spacing: 0.46px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .error {
+    justify-content: center;
+    &__left {
+      display: none;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .error {
+    &__heading {
+      font-size: 70px;
+    }
+    &__text-button {
+      font-size: 20px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .error {
+    &__heading {
+      font-size: 60px;
+    }
+    &__text-button {
+      font-size: 15px;
+    }
+  }
+}

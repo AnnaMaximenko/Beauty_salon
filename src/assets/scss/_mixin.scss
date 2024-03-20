@@ -1,0 +1,81 @@
+@mixin lineSpaceBetween($gap) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $gap;
+  flex-wrap: wrap;
+}
+
+@mixin lineSpaceBetween-Upper($gap) {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: $gap;
+}
+
+@mixin lineSpaceAround($gap) {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: $gap;
+}
+
+@mixin lineCenter($gap) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+}
+
+@mixin lineLeft($gap) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: $gap;
+}
+
+@mixin lineLeftUpper($gap) {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: $gap;
+}
+
+@mixin ColumnCenter($gap) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+}
+
+@mixin ColumnLeft($gap) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: $gap;
+}
+@mixin ColumnLeftUpper($gap) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: $gap;
+}
+@mixin ColumnRight($gap) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: $gap;
+}
+
+@mixin Grid($gap) {
+  display: grid;
+  grid-auto-flow: dense;
+  gap: $gap;
+  grid-template-columns: repeat(auto-fit, (minmax(400px, 1fr)));
+  align-items: center;
+  justify-content: center;
+}

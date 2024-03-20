@@ -1,0 +1,106 @@
+.master {
+  @include ColumnCenter(0px);
+  padding-top: 80px;
+  padding-bottom: 252.38px;
+  gap: 114px;
+  &__title {
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 57.6px */
+  }
+  &__wrapper {
+    @include lineSpaceBetween(0px);
+  }
+  &__ul {
+    width: 47%;
+    position: relative;
+  }
+  &__li {
+    padding-top: 30px;
+  }
+  .box {
+    border: 1px solid $colorHoverText;
+    position: absolute;
+    opacity: 0.5;
+    height: 770px;
+    width: 100%;
+    top: 0px;
+    right: -24px;
+    z-index: -1;
+  }
+
+  &__img {
+    margin-bottom: 52px;
+    width: 100%;
+  }
+  &__name {
+    font-family: "Cormorant Garamond";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 45.5px */
+    margin-bottom: 2px;
+  }
+  &__profession {
+    font-family: "Cormorant Garamond";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 35.1px */
+    margin-bottom: 14px;
+  }
+  &__experience {
+    color: var(--white, #fff);
+    font-family: "Cormorant Garamond";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 35.1px */
+  }
+}
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 767px) {
+  .master {
+    gap: 0;
+    padding-bottom: 100px;
+    &__title {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+    &__name {
+      font-size: 25px;
+    }
+    &__profession {
+      font-size: 20px;
+    }
+    &__experience {
+      font-size: 20px;
+    }
+    &__wrapper {
+      @include ColumnCenter(60px);
+    }
+    &__ul {
+      width: 100%;
+    }
+    &__img {
+      margin-bottom: 15px;
+    }
+    &__profession {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .master {
+    padding-bottom: 70px;
+    &__title {
+      font-size: 25px;
+      margin-bottom: 30px;
+    }
+  }
+}

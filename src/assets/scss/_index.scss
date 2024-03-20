@@ -1,0 +1,194 @@
+.introduction {
+  margin-bottom: 137px;
+
+  &__box {
+    // position: relative;
+    height: 849px;
+    background-image: url(../img/index-1-bgc.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    // z-index: 5;
+  }
+  &__title {
+    padding-left: 5px;
+    padding-top: 47px;
+    position: absolute;
+    color: $colorWhite;
+    text-align: center;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 86.4px */
+  }
+  &__wrapper {
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+    @include lineCenter(20px);
+  }
+  &__text {
+    color: $colorWhite;
+    font-family: EBGaramond-Regulary;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 25.2px */
+  }
+}
+
+.information {
+  @include ColumnCenter(60px);
+  margin-bottom: 259px;
+  &__wrapper {
+    @include ColumnCenter(25px);
+  }
+  &__text {
+    color: $colorWhite;
+    text-align: center;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 35.1px */
+    font-family: $fontFamilyCormorantGaramond;
+  }
+}
+
+.reviews {
+  margin-bottom: 266px;
+  &__ul {
+    @include lineCenter(32px);
+    flex-wrap: wrap;
+  }
+  &__li {
+    padding: 32px 23px 51px 36px;
+    border-radius: 32px;
+    background-color: $colorWhite;
+    width: 48.5%;
+    height: 291px;
+  }
+  &__svg {
+    margin-bottom: 32px;
+  }
+  &__text {
+    color: $colorTextReviews;
+    // font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; /* 150% */
+    margin-bottom: 22px;
+    font-family: $fontFamilySpaceGrotesk;
+  }
+  &__wrapper {
+    @include lineLeft(16px);
+  }
+  &__container {
+    @include ColumnLeft(0px);
+  }
+  &__name {
+    color: $colorNameReviews;
+    // font-family: Space Grotesk;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 160% */
+    font-family: $fontFamilySpaceGrotesk;
+  }
+  &__profession {
+    color: $colorTextReviews;
+    // font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    font-family: $fontFamilySpaceGrotesk;
+  }
+}
+.cosmetics {
+  margin-bottom: 186px;
+  &__ul {
+    @include lineSpaceAround(0px);
+    flex-wrap: wrap;
+  }
+  &__li {
+    opacity: 0.4;
+  }
+}
+
+@media (max-width: 1200px) {
+  .introduction {
+    margin-bottom: 80px;
+    &__box {
+      height: 500px;
+    }
+    &__title {
+      font-size: 50px;
+    }
+    &__wrapper {
+      left: 40%;
+    }
+  }
+
+  .information {
+    margin-bottom: 100px;
+    &__text {
+      font-size: 23px;
+    }
+  }
+
+  .reviews {
+    margin-bottom: 150px;
+    &__li {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .introduction {
+    &__box {
+      height: 350px;
+    }
+    &__title {
+      font-size: 30px;
+    }
+    &__wrapper {
+      left: 30%;
+    }
+  }
+  .information__svg {
+    height: 10%;
+  }
+  .cosmetics {
+    margin-bottom: 100px;
+    &__ul {
+      gap: 20px;
+      justify-content: space-between;
+    }
+    &__li {
+      width: 40%;
+      @include lineCenter(0);
+    }
+  }
+  .information {
+    &__text {
+      font-size: 20px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .reviews {
+    &__svg {
+      margin-bottom: 8px;
+    }
+    &__text {
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+    &__name {
+      font-size: 13px;
+    }
+    &__profession {
+      font-size: 13px;
+    }
+  }
+}
