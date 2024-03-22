@@ -1,8 +1,7 @@
 <template>
-  <section class="introduction center">
+  <section class="introduction">
     <div class="introduction__box">
-      <!-- FIXME не нравится картинка на фоне хочется размыт границы -->
-      <h2 class="introduction__title">
+      <h2 class="introduction__title center">
         Студия реконструкции <br />и&nbsp;колористики<br />&laquo;Best
         hair&raquo;
       </h2>

@@ -217,6 +217,11 @@
   }
 }
 @media (max-width: 767px) {
+  .header {
+    &__wrapper {
+      margin-bottom: 20px;
+    }
+  }
   .footer {
     &__wrapper-third {
       display: none;
