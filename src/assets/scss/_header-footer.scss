@@ -198,6 +198,10 @@
     &__wrapper-second {
       display: none;
     }
+    &__svg {
+      width: 45px;
+      height: 45px;
+    }
   }
   .burger {
     &__li {
@@ -219,4 +223,9 @@
   }
 }
 @media (max-width: 450px) {
+  .footer {
+    &__title {
+      margin-bottom: 10px;
+    }
+  }
 }
