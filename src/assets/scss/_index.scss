@@ -2,12 +2,12 @@
   margin-bottom: 137px;
 
   &__box {
-    // position: relative;
     height: 849px;
     background-image: url(../img/index-1-bgc.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    // z-index: 5;
+    // background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
   }
   &__title {
     padding-left: 5px;
