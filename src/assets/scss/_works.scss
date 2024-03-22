@@ -69,5 +69,11 @@
     &__button {
       font-size: 15px;
     }
+    &__button-box {
+      gap: 30px;
+    }
+    &__ul {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
   }
 }

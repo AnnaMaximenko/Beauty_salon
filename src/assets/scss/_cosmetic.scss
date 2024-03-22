@@ -94,5 +94,8 @@
     &__description {
       font-size: 15px;
     }
+    &__ul {
+      @include GridMobile(50px);
+    }
   }
 }
